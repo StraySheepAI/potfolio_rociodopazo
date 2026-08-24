@@ -62,8 +62,13 @@ export default function Home(){
     <aside className="metrics-ticker" aria-label={lang==="es"?"Experiencia profesional":"Professional experience"}><div className="ticker-track">{[0,1].map(copy=><div className="ticker-set" aria-hidden={copy===1} key={copy}>{[
       {n:"18",es:"Años de experiencia",en:"Years of experience"},{n:"40+",es:"Stakeholders",en:"Stakeholders"},{n:"30+",es:"Personas lideradas",en:"People led"},{n:"25+",es:"Iniciativas",en:"Initiatives"},{n:"3",es:"Soluciones de IA end-to-end",en:"End-to-end AI solutions"}
     ].map(item=><span className="ticker-item" key={`${copy}-${item.es}`}><b>{item.n}</b> {lang==="es"?item.es:item.en}<i>·</i></span>)}</div>)}</div></aside>
-    <section id="profile" className="section profile-section"><div className="container narrow">
-      <p className="section-kicker">{lang==="es"?"Perfil":"Profile"}</p><h2>{lang==="es"?"Arquitectura y liderazgo de sistemas complejos":"Complex Systems Architecture & Leadership"}</h2><div className="gradient-rule"/>
+    <section id="profile" className="section profile-section" data-content-version="about-v19"><div className="container narrow">
+      <p className="section-kicker">{lang==="es"?"Perfil":"Profile"}</p>
+      <h2>{lang==="es"
+        ? "Arquitectura y liderazgo de sistemas complejos"
+        : "Complex Systems Architecture & Leadership"}
+      </h2>
+      <div className="gradient-rule"/>
       <p className="lead-copy">{lang==="es"?"Diseño y lidero la transformación de sistemas complejos conectando personas, procesos, información, decisiones y tecnología.":"I design and lead the transformation of complex systems by connecting people, processes, information, decisions and technology."}</p>
       <p>{lang==="es"?"Mi trabajo comienza donde una organización encuentra fricción: procesos que no escalan, información dispersa, decisiones desconectadas o herramientas que existen, pero todavía no funcionan como un verdadero sistema.":"My work begins where an organization encounters friction: processes that do not scale, scattered information, disconnected decisions or tools that exist but do not yet operate as a true system."}</p>
       <p>{lang==="es"?"Tengo 18 años de experiencia en organizaciones, proyectos y transformación. Durante los últimos ocho desarrollé mi trayectoria principalmente en tecnología, liderando iniciativas end-to-end de transformación digital, delivery de soluciones, análisis funcional y articulación entre áreas de negocio, equipos técnicos, proveedores y stakeholders.":"I have 18 years of experience across organizations, projects and transformation. For the last eight, I have worked primarily in technology, leading end-to-end digital transformation initiatives, solution delivery, functional analysis and coordination across business areas, technical teams, vendors and stakeholders."}</p>
