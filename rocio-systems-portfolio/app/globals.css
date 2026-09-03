@@ -82,10 +82,11 @@
 .profile-section .evidence-line strong{color:var(--gold);white-space:nowrap}
 
 /* Interactive evidence cards */
-.profile-section .stats{grid-template-columns:repeat(5,1fr)}
-.profile-section .stat{appearance:none;color:var(--silver);font:inherit;cursor:pointer;background:transparent;border:0;border-right:1px solid var(--border);border-bottom:0;transition:background .25s ease,transform .25s ease}
-.profile-section .stat:nth-child(4){border-right:1px solid var(--border)}
-.profile-section .stat:last-child{grid-column:auto;border-right:0}
+.profile-section .stats{grid-template-columns:repeat(3,1fr)}
+.profile-section .stat{appearance:none;color:var(--silver);font:inherit;cursor:pointer;background:transparent;border:0;border-right:1px solid var(--border);border-bottom:1px solid var(--border);transition:background .25s ease,transform .25s ease}
+.profile-section .stat:last-child{grid-column:auto}
+.profile-section .stat:nth-child(3n){border-right:0}
+.profile-section .stat:nth-last-child(-n+3){border-bottom:0}
 .profile-section .stat:hover,.profile-section .stat.active{background:linear-gradient(145deg,rgba(156,77,255,.16),rgba(196,90,203,.06));transform:translateY(-3px)}
 .profile-section .stat:focus-visible{position:relative;z-index:1;outline:2px solid var(--violet);outline-offset:-3px}
 .profile-section .stat small{display:flex;align-items:center;gap:8px;margin-top:19px;color:var(--magenta);font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;opacity:0;transform:translateY(4px);transition:opacity .25s ease,transform .25s ease}
@@ -97,8 +98,8 @@
 .profile-section .metric-detail p:not(.section-kicker){margin:0;font-size:1rem;line-height:1.65}
 .metric-detail ul{display:flex;flex-wrap:wrap;gap:9px;margin:0;padding:0;list-style:none}
 .metric-detail li{padding:9px 13px;border:1px solid rgba(196,90,203,.3);border-radius:999px;color:var(--silver);background:rgba(156,77,255,.08);font-size:.72rem;letter-spacing:.06em}
-@media(max-width:900px){.profile-section .stats{grid-template-columns:repeat(2,1fr)}.profile-section .stat{border-bottom:1px solid var(--border)}.profile-section .stat:nth-child(even){border-right:0}.profile-section .stat:last-child{grid-column:1/-1;border-bottom:0}.metric-detail{grid-template-columns:1fr;gap:24px}}
-@media(max-width:560px){.profile-section .stats{grid-template-columns:1fr}.profile-section .stat,.profile-section .stat:nth-child(4){border-right:0;border-bottom:1px solid var(--border)}.profile-section .stat:last-child{grid-column:auto;border-bottom:0}.profile-section .stat small{opacity:1;transform:none}.metric-detail{padding:28px 24px}.metric-detail h3{font-size:1.7rem}}
+@media(max-width:900px){.profile-section .stats{grid-template-columns:repeat(2,1fr)}.profile-section .stat{border-right:1px solid var(--border);border-bottom:1px solid var(--border)}.profile-section .stat:nth-child(3n){border-right:1px solid var(--border)}.profile-section .stat:nth-child(even){border-right:0}.profile-section .stat:nth-last-child(-n+3){border-bottom:1px solid var(--border)}.profile-section .stat:nth-last-child(-n+2){border-bottom:0}.metric-detail{grid-template-columns:1fr;gap:24px}}
+@media(max-width:560px){.profile-section .stats{grid-template-columns:1fr}.profile-section .stat{border-right:0;border-bottom:1px solid var(--border)}.profile-section .stat:last-child{border-bottom:0}.profile-section .stat small{opacity:1;transform:none}.metric-detail{padding:28px 24px}.metric-detail h3{font-size:1.7rem}}
 
 /* MPA Flow mark doubles as the entry point to the professional practice. */
 a.flow-brand{text-decoration:none;border-radius:50%;transition:transform .3s ease,filter .3s ease}
