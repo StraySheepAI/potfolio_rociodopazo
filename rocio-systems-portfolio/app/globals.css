@@ -42,7 +42,7 @@
 .project-gallery img{display:block;width:100%;height:480px;object-fit:contain;background:#05050a;transition:transform .55s ease,filter .55s ease}
 .project-card-featured:hover .project-gallery img{filter:brightness(1.04)}
 .project-gallery img:hover{transform:scale(1.012)}
-.project-card-featured>h4,.project-card-featured>p,.project-card-featured>.project-badge,.project-card-featured>a,.project-card-featured>.no-link{margin-left:48px;margin-right:48px}
+.project-card-featured>h4,.project-card-featured>p,.project-card-featured>.concept-disclosure,.project-card-featured>.project-badge,.project-card-featured>a,.project-card-featured>.no-link{margin-left:48px;margin-right:48px}
 .project-card-featured>h4{margin-top:40px}
 .project-card-featured>a,.project-card-featured>.no-link{margin-bottom:46px}
 .project-card-visual:not(.project-card-featured){min-height:0;padding:24px}
@@ -53,7 +53,7 @@
 .project-card-visual:not(.project-card-featured) .narrative-portal-visual{aspect-ratio:16/9;padding:12px}
 .project-card-visual:not(.project-card-featured)>h4{font-size:1.9rem;margin-bottom:18px}
 .project-card-visual:not(.project-card-featured) .project-tagline{font-size:1.35rem;margin-bottom:20px}
-@media(max-width:560px){.project-visual{aspect-ratio:4/3}.project-gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory}.project-gallery img{flex:0 0 100%;height:360px;scroll-snap-align:start}.project-card-featured>h4,.project-card-featured>p,.project-card-featured>.project-badge,.project-card-featured>a,.project-card-featured>.no-link{margin-left:28px;margin-right:28px}.project-card-featured>h4{margin-top:30px}.project-card-featured>a,.project-card-featured>.no-link{margin-bottom:34px}}
+@media(max-width:560px){.project-visual{aspect-ratio:4/3}.project-gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory}.project-gallery img{flex:0 0 100%;height:360px;scroll-snap-align:start}.project-card-featured>h4,.project-card-featured>p,.project-card-featured>.concept-disclosure,.project-card-featured>.project-badge,.project-card-featured>a,.project-card-featured>.no-link{margin-left:28px;margin-right:28px}.project-card-featured>h4{margin-top:30px}.project-card-featured>a,.project-card-featured>.no-link{margin-bottom:34px}}
 
 /* Método Vivo — anonymized white-label mentoring platform mockup. */
 .metodo-vivo-visual{display:grid;grid-template-columns:210px minmax(0,1fr);aspect-ratio:16/8.7;background:#0b0b0c;color:#e8e3e7;font-family:'Rajdhani',sans-serif}
@@ -131,6 +131,12 @@ a.flow-brand:focus-visible{outline:2px solid var(--gold);outline-offset:8px}
 .projects-disclosure>summary span{color:var(--gold);font:400 1.45rem/1 'Cormorant Garamond',serif;transition:transform .25s ease}
 .projects-disclosure[open]>summary span{transform:rotate(45deg)}
 .projects-disclosure>.projects-grid{margin-top:22px;animation:aboutReveal .35s ease-out}
+.concept-disclosure{margin-top:24px;border-top:1px solid var(--border);padding-top:18px}
+.concept-disclosure>summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:18px;color:var(--gold);font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;cursor:pointer}
+.concept-disclosure>summary::-webkit-details-marker{display:none}
+.concept-disclosure>summary span{font:400 1.4rem/1 'Cormorant Garamond',serif;transition:transform .25s ease}
+.concept-disclosure[open]>summary span{transform:rotate(45deg)}
+.concept-disclosure>p{margin:18px 0 0;color:#938b99;font-size:1rem;line-height:1.7;animation:aboutReveal .3s ease-out}
 @media(max-width:900px){.group-heading .group-external{margin:8px 0 0}.projects-toggle{margin-top:18px}}
 @media(max-width:650px){.flow-stage{padding:16px;margin:-16px}.flow-field{inset:-4%;width:108%;height:108%;opacity:.54}}
 
