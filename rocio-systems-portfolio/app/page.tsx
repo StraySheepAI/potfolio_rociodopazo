@@ -90,7 +90,7 @@ export default function Home(){
     <div className="cosmos" aria-hidden="true"><span className="nebula n1"/><span className="nebula n2"/><span className="stars"/></div>
     <nav className="nav-shell" aria-label={lang==="es"?"Navegación principal":"Main navigation"}><div className="nav-inner">
       <a className="brand" href="#top"><img src="/mpa-flow-logo-final-v7.png" alt="MPA Flow"/><span>Rocío Dopazo</span></a>
-      <div className="nav-links"><a href="/portfolio">Portfolio</a><a href="/cv">CV</a><a href="https://mpaflow.com/" target="_blank" rel="noreferrer">MPA Flow ↗</a><a href="#profile">{lang==="es"?"Sobre mí":"About"}</a><a href="#excediendo-caracteres">Excediendo caracteres</a><a href="#contact">{lang==="es"?"Contacto":"Contact"}</a></div>
+      <div className="nav-links"><a href="/portfolio">Portfolio</a><a href="/capacitacion">Capacitación</a><a href="/cv">CV</a><a href="https://mpaflow.com/" target="_blank" rel="noreferrer">MPA Flow ↗</a><a href="#profile">{lang==="es"?"Sobre mí":"About"}</a><a href="#excediendo-caracteres">Excediendo caracteres</a><a href="#contact">{lang==="es"?"Contacto":"Contact"}</a></div>
       <div className="language"><a className={lang==="es"?"active":""} href="/?lang=es" onClick={()=>changeLanguage("es")} aria-current={lang==="es"?"true":undefined}>ES</a><a className={lang==="en"?"active":""} href="/?lang=en" onClick={()=>changeLanguage("en")} aria-current={lang==="en"?"true":undefined}>EN</a></div>
     </div></nav>
     <header id="top" className="hero"><img className="hero-city" src="/mar-del-plata-night.png" alt="" aria-hidden="true"/><div className="container hero-layout">
