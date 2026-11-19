@@ -240,4 +240,5 @@ a.flow-brand:focus-visible{outline:2px solid var(--gold);outline-offset:8px}
 .communication-method-visual img{width:150px;height:110px;object-fit:cover;object-position:center 46%;border-radius:16px;filter:saturate(.8) contrast(1.03)}
 .communication-method-visual p{margin:0;color:#5c5063;font:400 1.35rem/1.15 'Cormorant Garamond',serif}
 .communication-page .training-experiences{background-image:linear-gradient(180deg,rgba(24,10,34,.86),rgba(8,2,13,.9)),url('/assets/communication/rocio-microfono.png');background-size:cover;background-position:center 35%}
+.communication-project-link{color:inherit;text-decoration:none;border-bottom:1px solid rgba(176,138,90,.65);transition:color .2s,border-color .2s}.communication-project-link:hover{color:var(--gold);border-color:var(--gold)}
 @media(max-width:560px){.communication-method-visual{align-items:flex-start}.communication-method-visual img{width:112px;height:94px}.communication-method-visual p{font-size:1.15rem}}
