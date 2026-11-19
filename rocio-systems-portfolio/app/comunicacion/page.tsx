@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Rocío Dopazo · Estrategia y diseño de experiencias",
+  title: "Rocío Dopazo · Estrategia y comunicación",
   description: "Estrategia, dirección creativa y contenidos para que cada mensaje llegue a quien tiene que llegar.",
 };
 
@@ -21,7 +21,7 @@ export default function ComunicacionPage() {
   return <main className="training-page communication-page">
     <nav className="training-nav"><Link className="training-brand" href="/"><img src="/mpa-flow-logo-final-v7.png" alt="MPA Flow"/><span>Rocío Dopazo</span></Link><div className="training-nav-links"><Link href="/">Perfil general</Link><Link href="/cv">Trayectoria</Link><Link href="/capacitacion">Capacitación</Link><Link href="/comunicacion">Estrategia y comunicación</Link><Link className="training-nav-cta" href="#contacto">Conversar</Link></div></nav>
 
-    <header className="training-hero"><div className="training-hero-copy"><p className="section-kicker">Estrategia y diseño de experiencias · Dirección creativa</p><h1>Siempre pensé en <em>cómo llegar.</em></h1><p className="training-dek">En el aula, en un taller, en un informe para la dirección, en un escenario o detrás de una cámara. Hoy pongo esa pregunta en el centro de mi trabajo: diseñar cómo llega un mensaje a quien tiene que recibirlo.</p><div className="training-actions"><Link className="button primary" href="#contacto">Conversar</Link><Link className="button secondary" href="/">Ver perfil completo</Link></div></div><figure className="training-portrait"><img src="/rocio-mpa-flow.jpg" alt="Rocío Dopazo trabajando con MPA Flow"/><figcaption>Estrategia · Dirección · Experiencias</figcaption></figure></header>
+    <header className="training-hero"><div className="training-hero-copy"><p className="section-kicker">Estrategia y comunicación · Dirección creativa</p><h1>Siempre pensé en <em>cómo llegar.</em></h1><p className="training-dek">En el aula, en un taller, en un informe para la dirección, en un escenario o detrás de una cámara. Hoy pongo esa pregunta en el centro de mi trabajo: diseñar cómo llega un mensaje a quien tiene que recibirlo.</p><div className="training-actions"><Link className="button primary" href="#contacto">Conversar</Link><Link className="button secondary" href="/">Ver perfil completo</Link></div></div><figure className="training-portrait"><img src="/rocio-mpa-flow.jpg" alt="Rocío Dopazo trabajando con MPA Flow"/><figcaption>Estrategia · Comunicación · Experiencias</figcaption></figure></header>
 
     <section className="training-intro"><p className="section-kicker">Qué hago</p><h2>Una estrategia clara encuentra su forma.</h2><p>Trabajo en la intersección entre pensamiento estratégico, sensibilidad creativa y lectura de audiencias. Cada pieza tiene un propósito: orientar, explicar, convocar o hacer que algo se mueva.</p></section>
     <section className="training-pillars">{services.map(([code,title,text])=><article className="training-pillar" key={code}><span className="training-number">{code}</span><h3>{title}</h3><p>{text}</p></article>)}</section>
